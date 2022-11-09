@@ -7,21 +7,36 @@ class Plane {
         this.maxLoadCapacity = maxLoadCapacity;
     }
 
-    getModel() {
+    get Model() {
         return this.model;
     }
 
-    getMS() {
+    set Model(value){
+        this.model=value;
+    }
+
+    get MaxSpeed() {
         return this.maxSpeed;
     }
 
-    Get_Max_Flight_Distance() {
+    set MaxSpeed(value){
+        this.maxSpeed=value;
+    }
+
+    get MaxFlightDistance() {
         return this.maxFlightDistance;
     }
 
-    getMinLoadCapacity() {
-     let result = this.maxLoadCapacity;
-     return result;
+    set MaxFlightDistance(value){
+        this.maxFlightDistance=value;
+    }
+
+    get MaxLoadCapacity() {
+        return this.maxLoadCapacity;
+    }
+
+    set MaxLoadCapacity(value){
+        this.maxLoadCapacity=value;
     }
 }
 
