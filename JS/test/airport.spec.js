@@ -33,7 +33,7 @@ describe('My Test', () => {
 
     it('should have military Planes with transport type', () => {
         let airport = new Airport(planes);
-        assert.isTrue(airport.getTransportMilitaryPlanes().MilitaryType() === MilitaryType.TYPE_TRANSPORT);
+        assert.isTrue(airport.getMilitaryPlanes() === MilitaryType.TYPE_TRANSPORT);
     });
 
     it('should check passenger plane with max capacity', () => {
@@ -50,12 +50,12 @@ describe('My Test', () => {
 
     it('should check has at least one bomber in military planes', () => {
         let airport = new Airport(planes);
-        assert.isTrue(airport.getBomberMilitaryPlanes().getMilitaryType() === MilitaryType.TYPE_BOMBER);
+        assert.isTrue(airport.getMilitaryPlanes() === MilitaryType.TYPE_BOMBER);
     })
 
     it('should check that experimentsl planes has classification level higher than unclassified', () => {
         let airport = new Airport(planes);
-        assert.isFalse(airport.getExperimentalPlanes().classificationLevel === ClassificationLevel.UNCLASSIFIED);
+        assert.isFalse(airport.getExperimentalPlanes()=== ClassificationLevel.UNCLASSIFIED);
     });
 });
 
